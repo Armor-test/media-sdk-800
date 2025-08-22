@@ -1,0 +1,34 @@
+# CODEOWNERS file for media-sdk-800
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-mobile @Armor-test/unit-devops @Armor-test/dept-data
+
+# Directory ownership
+/vendor/ @Armor-test/dept-reporting @Armor-test/squad-reporting
+/web/ @Armor-test/dept-billing @Armor-test/squad-database @Armor-test/grp-ui
+/lib/ @Armor-test/dept-test @Armor-test/team-logging
+/dist/ @Armor-test/squad-tooling @Armor-test/squad-ml @Armor-test/squad-frontend
+/assets/ @Armor-test/dept-automation @Armor-test/squad-reporting
+/src/ @Armor-test/squad-search @Armor-test/dept-data @Armor-test/squad-tooling
+/test/ @Armor-test/grp-ui @Armor-test/dept-logging @Armor-test/dept-automation
+/common/ @Armor-test/grp-search @Armor-test/grp-payments
+/hooks/ @Armor-test/squad-research @Armor-test/unit-cloud @Armor-test/dept-release
+/api/ @Armor-test/unit-design @Armor-test/squad-reporting
+
+# File type ownership
+*.html @Armor-test/grp-integration @Armor-test/unit-design @Armor-test/squad-mobile
+*.tsx @Armor-test/squad-database @Armor-test/team-reporting
+*.h @Armor-test/team-frontend @Armor-test/dept-reliability
+*.js @Armor-test/grp-integration @Armor-test/dept-reporting @Armor-test/squad-ux
+*.yaml @Armor-test/squad-reporting @Armor-test/squad-apps @Armor-test/squad-mobile
+*.rs @Armor-test/dept-automation @Armor-test/squad-mobile @Armor-test/dept-data
+*.c @Armor-test/dept-notifications @Armor-test/squad-frontend
+*.xml @Armor-test/team-research @Armor-test/unit-devops
+*.py @Armor-test/dept-api @Armor-test/squad-research
+*.ts @Armor-test/dept-reliability @Armor-test/squad-product @Armor-test/team-logging
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
